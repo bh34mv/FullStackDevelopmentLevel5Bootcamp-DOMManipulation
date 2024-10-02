@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>DOM Selecting</title>
+</head>
+ 
+<body>
+<h1> The Document Object </h1>
+<h2> The QuerySelectorAll() Method</h2>
+ 
+ 
+<p> Add a background colour to the first P element </p>
+<h2 class="example"> A heading </h2>
+<p class="example"> A Paragraph </p> 
+<p> A Paragraph </p>
+<p> A Paragraph </p>
+<script> 
+const nodelist = document.querySelectorAll(".example"); 
+for(let i = 0; i < nodelist.length; i++)
+{
+   nodelist[i].style.backgroundColor = "green";
+}
+</script>
+</body>
